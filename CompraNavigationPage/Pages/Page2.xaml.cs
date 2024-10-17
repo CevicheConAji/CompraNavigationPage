@@ -6,4 +6,14 @@ public partial class Page2 : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void btSiguienteP2_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Page3());
+    }
+
+    private async void btAnteriorP2_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }

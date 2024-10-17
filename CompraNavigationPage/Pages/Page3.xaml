@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CompraNavigationPage.Pages.Page2"
-             Title="Productos"
+             x:Class="CompraNavigationPage.Pages.Page3"
+             Title="Page3"
              BackgroundColor="Beige">
-    
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -23,15 +22,15 @@
             <HorizontalStackLayout 
                 HorizontalOptions="Center">
                 <Button
-                    x:Name="btAnteriorP2"
-                    Clicked="btAnteriorP2_Clicked"
+                    x:Name="btAnteriorP3"
+                    Clicked="btAnteriorP3_Clicked"
                     Text="Anterior"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     Margin="20"/>
                 <Button
-                 x:Name="btSiguienteP2"
-                 Clicked="btSiguienteP2_Clicked"
+                 x:Name="btSiguienteP3"
+                 Clicked="btSiguienteP3_Clicked"
                 Text="Siguiente" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
