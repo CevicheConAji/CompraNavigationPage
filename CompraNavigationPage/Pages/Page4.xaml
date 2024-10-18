@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CompraNavigationPage.Pages.Page4"
+             Title="DIRECCION"
+             BackgroundColor="Beige">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="fr.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Pulsa el botón para empezar la compra"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <HorizontalStackLayout 
+                HorizontalOptions="Center">
+                <Button
+                    x:Name="btAnteriorP4"
+                    Clicked="btAnteriorP4_Clicked"
+                    Text="Anterior"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="20"/>
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

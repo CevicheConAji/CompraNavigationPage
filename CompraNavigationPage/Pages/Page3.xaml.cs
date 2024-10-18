@@ -6,14 +6,19 @@ public partial class Page3 : ContentPage
 	{
 		InitializeComponent();
 	}
+    public Page3(String producto)
+    {
+        InitializeComponent();
+
+    }
 
     private async void btAnteriorP3_Clicked(object sender, EventArgs e)
     {
         await Navigation.PopAsync();
     }
 
-    private void btSiguienteP3_Clicked(object sender, EventArgs e)
+    private async void btSiguienteP3_Clicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new Page4());
     }
 }

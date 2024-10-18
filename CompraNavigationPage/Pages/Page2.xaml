@@ -16,9 +16,23 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Pulsa el botón para empezar la compra"
+                Text="Elije el producto"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+
+            <Picker x:Name="pickerProductos" 
+                    Title="Productos" 
+                    SelectedIndexChanged="pickerProductos_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Producto 1</x:String>
+                    <x:String>Producto 2</x:String>
+                    <x:String>Producto 3</x:String>
+                    <x:String>Producto 4</x:String>
+                    <x:String>Producto 5</x:String>
+                </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
 
             <HorizontalStackLayout 
                 HorizontalOptions="Center">
