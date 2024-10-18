@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CompraNavigationPage.Pages.Page2"
              Title="PRODUCTOS"
-             BackgroundColor="Beige">
+             BackgroundColor="BurlyWood">
     
     <ScrollView>
         <VerticalStackLayout
@@ -21,15 +21,15 @@
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Picker x:Name="pickerProductos" 
-                    Title="Productos" 
+                    Title="Tipo de cafe" 
                     SelectedIndexChanged="pickerProductos_SelectedIndexChanged">
                 <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>Producto 1</x:String>
-                    <x:String>Producto 2</x:String>
-                    <x:String>Producto 3</x:String>
-                    <x:String>Producto 4</x:String>
-                    <x:String>Producto 5</x:String>
+                        <x:String>Arábica</x:String>
+                        <x:String>Robusta</x:String>
+                        <x:String>Excelsa</x:String>
+                        <x:String>Libéria</x:String>
+                        <x:String>ESPAÑA</x:String>
                 </x:Array>
                 </Picker.ItemsSource>
             </Picker>

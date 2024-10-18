@@ -3,32 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CompraNavigationPage.Pages.Page4"
              Title="DIRECCION"
-             BackgroundColor="Beige">
+             BackgroundColor="BurlyWood">
+
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+         Padding="30,0"
+         Spacing="25">
             <Image
-                Source="fr.jpg"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+             Source="fr.jpg"
+             HeightRequest="185"
+             Aspect="AspectFit"
+             SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Pulsa el botón para empezar la compra"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+             Text="Introduce la dirección"
+             Style="{StaticResource Headline}"
+             SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="domicilio"></Entry>
 
             <HorizontalStackLayout 
-                HorizontalOptions="Center">
+             HorizontalOptions="Center">
                 <Button
-                    x:Name="btAnteriorP4"
-                    Clicked="btAnteriorP4_Clicked"
-                    Text="Anterior"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    Margin="20"/>
-
+                 x:Name="btAnteriorP4"
+                 Clicked="btAnteriorP4_Clicked"
+                 Text="Anterior"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 Margin="20"/>
+                <Button
+              x:Name="btSiguienteP4"
+              Clicked="btSiguienteP4_Clicked"
+             Text="Siguiente" 
+             HorizontalOptions="Center" 
+             VerticalOptions="Center"
+             />
             </HorizontalStackLayout>
 
         </VerticalStackLayout>

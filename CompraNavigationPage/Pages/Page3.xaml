@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CompraNavigationPage.Pages.Page3"
              Title="UNIDADES"
-             BackgroundColor="Beige">
+             BackgroundColor="BurlyWood">
+
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -14,10 +15,20 @@
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
-            <Label
-                Text="Pulsa el botón para empezar la compra"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Picker x:Name="pickerUnidades" 
+                  Title="Selecciona la cantidad" 
+                  SelectedIndexChanged="pickerUnidades_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>0.5 Kg</x:String>
+                        <x:String>1 Kg</x:String>
+                        <x:String>1.5 Kg</x:String>
+                        <x:String>2 Kg</x:String>
+                        <x:String>2.5 Kg</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
 
             <HorizontalStackLayout 
                 HorizontalOptions="Center">
@@ -36,7 +47,6 @@
                 VerticalOptions="Center"
                 />
             </HorizontalStackLayout>
-
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

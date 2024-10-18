@@ -7,12 +7,14 @@ public partial class Page2 : ContentPage
     public Page2()
     {
         InitializeComponent();
+        this.cadena = cadena;
+       
     }
 
 
     private async void btSiguienteP2_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Page3());
+        await Navigation.PushAsync(new Page3(cadena));
     }
 
     private async void btAnteriorP2_Clicked(object sender, EventArgs e)
